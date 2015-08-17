@@ -50,11 +50,11 @@ namespace App3
             return _container.Resolve(type);
         }
 
-        public enum Experience { Main, Login }
+        public enum Experience { Main, Login, Test }
 
         protected override System.Threading.Tasks.Task OnLaunchApplicationAsync(LaunchActivatedEventArgs args)
         {
-            this.NavigationService.Navigate(Experience.Main.ToString(),null);
+            this.NavigationService.Navigate(Experience.Test.ToString(),null);
 
             _container.Resolve<IEventAggregator>()
                 .GetEvent<Messages.Logout>()
