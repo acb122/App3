@@ -9,10 +9,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:app3="using:App3"
+    xmlns:DesignTime="using:App3.DesignTime"
     mc:Ignorable="d">
     
     <d:Page.DataContext>
-        <app3:LoginPageViewModel/>
+        <DesignTime:LoginPageViewModel/>
     </d:Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

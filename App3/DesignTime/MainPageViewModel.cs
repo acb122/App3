@@ -1,6 +1,6 @@
-namespace App3
+namespace App3.DesignTime
 {
-    public class MainPageViewModel : Interfaces.IMainPageViewModel
+    public class MainPageViewModel : App3.Interfaces.IMainPageViewModel
     {
         public MainPageViewModel()
         {

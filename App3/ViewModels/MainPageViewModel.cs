@@ -21,7 +21,7 @@ namespace App3.ViewModels
         public override void OnNavigatedTo(object navigationParameter, NavigationMode navigationMode, Dictionary<string, object> viewModelState)
         {
             this.Title = "Hello RunTime!";
-            this._eventAggregator.GetEvent<Messages.Logout>().Subscribe(HandleLogout);
+            //this._eventAggregator.GetEvent<Messages.Logout>().Subscribe(HandleLogout);
         }
 
         private void HandleLogout(string value)

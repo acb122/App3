@@ -4,7 +4,10 @@ namespace App3.ViewModels
 
     public class LoginPageViewModel : ViewModel, Interfaces.ILoginPageViewModel
     {
-
+        public LoginPageViewModel()
+        {
+            Username = "testme";
+        }
         private string _Username;
         [RestorableState]
         public string Username

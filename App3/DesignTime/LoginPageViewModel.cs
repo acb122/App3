@@ -1,4 +1,4 @@
-namespace App3
+namespace App3.DesignTime
 {
     public class LoginPageViewModel : Interfaces.ILoginPageViewModel
     {
