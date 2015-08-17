@@ -1,0 +1,27 @@
+﻿<controls:PageBase
+    x:Class="App3.Views.LoginPage"
+    xmlns:controls="using:App3.Controls"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3.Views"
+    xmlns:prism="using:Microsoft.Practices.Prism.Mvvm"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:designtime="using:App3.DesignTime"
+    mc:Ignorable="d">
+    
+    <d:Page.DataContext>
+        <designtime:LoginPageViewModel/>
+    </d:Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel VerticalAlignment="Center" Width="400">
+            <TextBox Header="Username" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Header="Password" Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Log out"></Button>
+        </StackPanel>
+        
+    </Grid>
+</controls:PageBase>
